@@ -1,13 +1,13 @@
 import "./App.css";
 import React, { useState } from "react";
 
-import { BrowserRouter as Router,Routes, Route } from "react-router-dom";    //npm install react-router-dom
+// import { BrowserRouter as Router,Routes, Route } from "react-router-dom";    //npm install react-router-dom
 
 // import Me from './components/Me';
 
 import Alert from "./components/Alert";
 import Navbar from "./components/Navbar";
-import Me from "./components/Me";
+// import Me from "./components/Me";
 import Textform from "./components/Textform";
 
 function App() {
@@ -59,33 +59,38 @@ function App() {
 
   return (
     <>
-      <Router>
-        {/* <Navbar title="TextUtils" about='About the React' /> */}
-        {/* <Navbar  /> */}
-        <Navbar
-          title="TextUtils"
-          mode={mode}
-          red={red}
-          redMode={redMode}
-          toggleMode={toggleMode}
-        />
+      {/* <Router> */}
+      {/* <Navbar title="TextUtils" about='About the React' /> */}
+      {/* <Navbar  /> */}
+      <Navbar
+        title="TextUtils"
+        mode={mode}
+        red={red}
+        redMode={redMode}
+        toggleMode={toggleMode}
+      />
 
-        <Alert alert={alert} />
+      <Alert alert={alert} />
 
-        <div className="container">
-          <Routes>
-          {/* exact usage
+      <div className="container">
+        {/* <Routes> */}
+        {/* exact usage
           /users -->Component1
           /users/home -->Component2 */}
 
-            <Route exact path="/Me" element={<Me />}/>          
+        {/* <Route exact path="/Me" element={<Me />}/>          
             <Route exact path="/" element={<Textform
                 showAlert={showAlert} heading="Enter the text to analyze below" mode={mode} red={red} />}/>
-          </Routes>
-
-          {/* <Me /> */}
-        </div>
-      </Router>
+          </Routes> */}
+        <Textform
+          showAlert={showAlert}
+          heading="Enter the text to analyze below"
+          mode={mode}
+          red={red}
+        />
+        {/* <Me /> */}
+      </div>
+      {/* </Router> */}
     </>
   );
 }
