@@ -51,9 +51,13 @@ function App() {
     if (red === "light") {
       setRed("danger");
       document.body.style.backgroundColor = "rgb(238, 0, 48)";
+      showAlert("Enabled to Red Mode", "dark");
+      document.title = "TextUtils - Dark Mode";
     } else {
       setRed("light");
       document.body.style.backgroundColor = "white";
+      showAlert("Enabled to Light Mode", "success");
+      document.title = "TextUtils - Light Mode";
     }
   };
 

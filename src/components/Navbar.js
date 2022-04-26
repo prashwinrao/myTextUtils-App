@@ -6,7 +6,7 @@ import PropTypes from 'prop-types' //--> impt shortcut --> this is used to the f
 
 export default function Navbar(props) {
   return (
-    <nav className={`navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode} `}>
+    <nav className={`navbar navbar-expand-lg navbar-${props.red==='danger'||props.mode==='dark'?'dark':'light'} bg-${props.red==='danger'||props.mode==='dark'?'dark':'light'} `}>
     <div className="container-fluid">
       {/* <Link className="navbar-brand" to="/">{props.title}</Link> */}
       <a className="navbar-brand" href="">{props.title}</a>
@@ -26,11 +26,11 @@ export default function Navbar(props) {
         </ul>
         <div className="form-check m-3 form-switch">
   <input className="form-check-input" onClick={props.redMode} type="checkbox" role="switch" id="flexSwitchCheckDefault" />
-  <label className={`form-check-label text-${props.red==='light'?'danger':'dark'}`}  htmlFor="flexSwitchCheckDefault">Enable Red Mode</label>
+  <label className={`form-check-label text-${props.red==='light'?'danger':'success'}`}  htmlFor="flexSwitchCheckDefault">Enable Red Mode</label>
 </div>
         <div className="form-check form-switch">
   <input className="form-check-input" onClick={props.toggleMode} type="checkbox" role="switch" id="flexSwitchCheckDefault" />
-  <label className={`form-check-label text-${props.mode==='dark'?'light':'dark'}`}  htmlFor="flexSwitchCheckDefault">Enable Dark Mode</label>
+  <label className={`form-check-label text-${props.mode==='dark'?'success':'secondary'}`}  htmlFor="flexSwitchCheckDefault">Enable Dark Mode</label>
 </div>
       
       </div>

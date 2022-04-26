@@ -7,19 +7,19 @@ export default function Textform(props) {
         //setText("Enter text here"); ;   //correct way in react JS
         let newText=text.toUpperCase();
         setText(newText)
-        props.showAlert("Converted to UpperCase","primary")
+        props.showAlert("Converted to UpperCase","info")
     }
 
     const handledownClick=()=>{
         let lowtext=text.toLowerCase();
         setText(lowtext)
-        props.showAlert("Converted to lowercase","primary")
+        props.showAlert("Converted to lowercase","info")
     }
 
       const clearText=()=>{
         let clear='';
         setText(clear)
-        props.showAlert("Text is cleard","primary")
+        props.showAlert("Text is cleard","info")
       }
 
     const capitalFirstLetter = ()=>{
@@ -31,20 +31,20 @@ export default function Textform(props) {
       });
       setText(uppercaseword)
 
-      props.showAlert("First letter is capitalized","primary")
+      props.showAlert("First letter is capitalized","info")
   }
 
   const Extraspaces=()=>{
     let text1=text.split(/[ ]+/);
     setText(text1.join(" "))
-    props.showAlert("ExtraSpaces has been removed","primary")
+    props.showAlert("ExtraSpaces has been removed","info")
   }
 
   const handleCopy =()=>{
     var text=document.getElementById("text");
     text.select();
     navigator.clipboard.writeText(text.value);
-    props.showAlert("Text has been copied","primary")
+    props.showAlert("Text has been copied","info")
   }
     
   const charact=(word)=>{
