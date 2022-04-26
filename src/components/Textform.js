@@ -73,12 +73,12 @@ const [text,setText] =useState('');
     {/* onclick even listener is the listener when you click on something then the changes happens according to the given funcion */}
   <textarea className="form-control" value={text} onChange={handleOnChange} id="text" rows="8" style={{background:props.mode==='dark'||props.red==='danger'?'gray':'white', color:props.mode==='dark'||props.red==='danger'?'white':'#042743',}}  ></textarea>
 </div>
-<button className={`btn me-3 btn-${props.mode==='light'?'warning':'dark'}`} onClick={handleUpClick}>Convert to uppercase</button>
-<button className={`btn me-3 btn-${props.mode==='light'?'warning':'dark'}`} onClick={handledownClick}>Convert to Lowercase</button>
-<button className={`btn me-3 btn-${props.mode==='light'?'warning':'dark'}`} onClick={capitalFirstLetter}>Capitalize</button>
-<button className={`btn me-3 btn-${props.mode==='light'?'warning':'dark'}`} onClick={clearText}>Clear</button>
-<button className={`btn me-3 btn-${props.mode==='light'?'warning':'dark'}`} onClick={handleCopy}>Copy Text</button>
-<button className={`btn me-3 btn-${props.mode==='light'?'warning':'dark'}`} onClick={Extraspaces}>Remove ExtraSpace</button>
+<button className={`btn mx-3 my-3 btn-${props.mode==='light'?'warning':'dark'}`} onClick={handleUpClick}>Convert to uppercase</button>
+<button className={`btn mx-3 my-3 btn-${props.mode==='light'?'warning':'dark'}`} onClick={handledownClick}>Convert to Lowercase</button>
+<button className={`btn mx-3 my-3 btn-${props.mode==='light'?'warning':'dark'}`} onClick={capitalFirstLetter}>Capitalize</button>
+<button className={`btn mx-3 my-3 btn-${props.mode==='light'?'warning':'dark'}`} onClick={clearText}>Clear</button>
+<button className={`btn mx-3 my-3 btn-${props.mode==='light'?'warning':'dark'}`} onClick={handleCopy}>Copy Text</button>
+<button className={`btn mx-3 my-3 btn-${props.mode==='light'?'warning':'dark'}`} onClick={Extraspaces}>Remove ExtraSpace</button>
 
 
 
