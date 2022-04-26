@@ -27,7 +27,7 @@ export default function Textform(props) {
       console.log(words);
      let uppercaseword = ''
       words.forEach(element => {
-         uppercaseword += element.charAt(0).toUpperCase() + element.slice(1) + " "
+         uppercaseword += element.charAt(0).toUpperCase() + element.slice(1).toLowerCase() + " "
       });
       setText(uppercaseword)
 
