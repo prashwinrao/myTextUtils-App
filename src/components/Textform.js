@@ -86,7 +86,7 @@ export default function Textform(props) {
         <button
           disabled={text.length === 0}
           className={`btn mx-3 my-3 btn-${
-            props.mode === "light" ? "primary" : "dark"
+            props.mode === "light" ? "warning" : "dark"
           }`}
           onClick={handleUpClick}
         >
@@ -95,7 +95,7 @@ export default function Textform(props) {
         <button
           disabled={text.length === 0}
           className={`btn mx-3 my-3 btn-${
-            props.mode === "light" ? "primary" : "dark"
+            props.mode === "light" ? "warning" : "dark"
           }`}
           onClick={handledownClick}
         >
@@ -104,7 +104,7 @@ export default function Textform(props) {
         <button
           disabled={text.length === 0}
           className={`btn mx-3 my-3 btn-${
-            props.mode === "light" ? "primary" : "dark"
+            props.mode === "light" ? "warning" : "dark"
           }`}
           onClick={capitalFirstLetter}
         >
@@ -113,7 +113,7 @@ export default function Textform(props) {
         <button
           disabled={text.length === 0}
           className={`btn mx-3 my-3 btn-${
-            props.mode === "light" ? "primary" : "dark"
+            props.mode === "light" ? "warning" : "dark"
           }`}
           onClick={clearText}
         >
@@ -122,7 +122,7 @@ export default function Textform(props) {
         <button
           disabled={text.length === 0}
           className={`btn mx-3 my-3 btn-${
-            props.mode === "light" ? "primary" : "dark"
+            props.mode === "light" ? "warning" : "dark"
           }`}
           onClick={handleCopy}
         >
@@ -131,7 +131,7 @@ export default function Textform(props) {
         <button
           disabled={text.length === 0}
           className={`btn mx-3 my-3 btn-${
-            props.mode === "light" ? "primary" : "dark"
+            props.mode === "light" ? "warning" : "dark"
           }`}
           onClick={Extraspaces}
         >
