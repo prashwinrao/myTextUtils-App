@@ -3,7 +3,7 @@ import React, { useState } from "react";
 
 import { BrowserRouter as Router,Routes, Route } from "react-router-dom";    //npm install react-router-dom
 
-// import Me from './components/Me';
+
 
 import Alert from "./components/Alert";
 import Navbar from "./components/Navbar";
@@ -50,6 +50,7 @@ function App() {
 
   return (
     <>
+    {/* npm install react-router-dom then see the documentation of the react-router-dom.. --> this is used to swift the pages froom home to about us without reloading it.. hence it keeps the necessary things required and changed only the things to be changed. */}
       <Router>
       {/* <Navbar title="TextUtils" about='About the React' /> */}
       {/* <Navbar  /> */}
@@ -75,8 +76,7 @@ function App() {
         {/* <Textform
           showAlert={showAlert}
           heading="Enter the text to analyze below"
-          mode={mode}
-          
+          mode={mode}         
         /> */}
         {/* <Me /> */}
       </div>

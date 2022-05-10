@@ -23,7 +23,7 @@ export default function Textform(props) {
 
   const capitalFirstLetter = () => {
     let words = text.split(" ");
-    console.log(words);
+    // console.log(words);
     let uppercaseword = "";
     words.forEach((element) => {
       uppercaseword +=
